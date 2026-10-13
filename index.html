@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff8f5">
+  <meta name="description" content="Luxe by Amanda — trendy, affordable fashion for every woman. Nationwide delivery across Nigeria.">
+  <title>Luxe by Amanda | Look Good. Feel Amazing.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="announcement">A LITTLE LUXE, A LOT OF STYLE ✨ Nationwide delivery across Nigeria</div>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Luxe by Amanda home">
+      <span class="brand-main">Luxe</span><span class="brand-script">by Amanda</span>
+    </a>
+    <button class="icon-btn menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false"><i data-lucide="menu"></i></button>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#products" data-category-link="All">New In</a>
+      <a href="#products" data-category-link="Dresses">Dresses</a>
+      <a href="#products" data-category-link="Two-Piece">Two-Piece</a>
+      <a href="#products" data-category-link="Sale">Sale</a>
+      <a href="#footer">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <label class="header-search"><i data-lucide="search"></i><input id="searchInput" type="search" placeholder="Search pieces..." aria-label="Search products"></label>
+      <button class="icon-btn cart-open" id="cartOpen" aria-label="Open shopping cart"><i data-lucide="shopping-bag"></i><span class="cart-count" id="cartCount">0</span></button>
+      <a class="button button-pink header-whatsapp" id="headerWhatsApp" href="https://wa.me/2349039610446" target="_blank" rel="noopener"><i data-lucide="message-circle"></i> Chat Us</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <span class="eyebrow">NEW COLLECTION 2026</span>
+        <h1>Slay On A Budget,<br><em>Look Like A Million</em></h1>
+        <p>Trendy, affordable pieces for every woman. Find your next favourite fit and let your style do the talking.</p>
+        <p class="hero-delivery">Nationwide delivery. Easy, stress-free shopping.</p>
+        <div class="hero-buttons">
+          <a href="#products" class="button button-pink glow">Shop Now <i data-lucide="arrow-up-right"></i></a>
+          <a href="#instagram" class="button button-outline">View Lookbook</a>
+        </div>
+        <div class="hero-note"><span class="note-star">✦</span><span><strong>Style that feels like you.</strong><small>Curated with love, priced with you in mind.</small></span></div>
+      </div>
+      <div class="hero-visual">
+        <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1200&q=85" alt="Fashion model in a stylish outfit">
+        <div class="discount-card"><span>✦</span><strong>30% OFF</strong><small>First Order</small></div>
+        <div class="hero-caption">YOUR STYLE. YOUR RULES.</div>
+      </div>
+    </section>
+
+    <section class="shop-section section-wrap" id="products">
+      <div class="section-heading">
+        <span class="eyebrow">FIND YOUR FIT</span>
+        <h2>Shop By Category</h2>
+        <p>Pieces you'll want to wear on repeat.</p>
+      </div>
+      <div class="shop-tools">
+        <div class="category-tabs" role="group" aria-label="Filter products by category">
+          <button class="category-tab active" data-category="All">All</button>
+          <button class="category-tab" data-category="Dresses">Dresses</button>
+          <button class="category-tab" data-category="Two-Piece">Two-Piece</button>
+          <button class="category-tab" data-category="Tops & Skirts">Tops &amp; Skirts</button>
+          <button class="category-tab" data-category="Sale">Sale</button>
+        </div>
+        <label class="mobile-search"><i data-lucide="search"></i><input id="mobileSearchInput" type="search" placeholder="Search the collection..." aria-label="Search products"></label>
+      </div>
+      <div class="product-grid" id="productGrid" aria-live="polite"></div>
+      <p class="empty-state" id="emptyState" hidden>No pieces found. Try another search or category.</p>
+    </section>
+
+    <section class="features-bar section-wrap" aria-label="Shopping benefits">
+      <div class="feature"><span class="feature-icon"><i data-lucide="truck"></i></span><span><strong>Pay on Delivery</strong><small>Available in Lagos</small></span></div>
+      <div class="feature"><span class="feature-icon"><i data-lucide="package-check"></i></span><span><strong>Nationwide Delivery</strong><small>Across Nigeria</small></span></div>
+      <div class="feature"><span class="feature-icon"><i data-lucide="shield-check"></i></span><span><strong>Easy Exchange</strong><small>Shop with confidence</small></span></div>
+    </section>
+
+    <section class="bestseller section-wrap">
+      <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1800&q=85" alt="Fashion campaign with a stylish model">
+      <div class="bestseller-overlay"></div>
+      <div class="bestseller-copy">
+        <span class="eyebrow light">THE PEOPLE'S FAVOURITES</span>
+        <h2>Our Bestsellers<br>Are Selling Fast</h2>
+        <p>Good style waits for no one. Find your next favourite before it's gone.</p>
+        <a href="#products" class="button button-pink glow">Shop Collection <i data-lucide="arrow-up-right"></i></a>
+      </div>
+    </section>
+
+    <section class="section-wrap testimonials">
+      <div class="section-heading">
+        <span class="eyebrow">REAL LOVE, REAL STYLE</span>
+        <h2>What Our Babes Say</h2>
+        <p>We're here for the fits and the happy dances when your order arrives.</p>
+      </div>
+      <div class="review-grid">
+        <article class="review-card">
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=240&q=80" alt="Customer portrait">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p>“The dress fit beautifully and looked exactly like the pictures. I'm already planning my next order!”</p>
+          <strong>Amaka O.</strong><small>Lagos, Nigeria</small>
+        </article>
+        <article class="review-card">
+          <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=240&q=80" alt="Customer portrait">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p>“Cute pieces, lovely prices and the communication was smooth. My two-piece is a whole vibe.”</p>
+          <strong>Jennifer C.</strong><small>Enugu, Nigeria</small>
+        </article>
+        <article class="review-card">
+          <img src="https://images.unsplash.com/photo-1508214000000-5b1a4c6a0c6f?auto=format&fit=crop&w=240&q=80" alt="Customer portrait">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p>“Affordable fashion that still feels special. I love that I can ask questions on WhatsApp before ordering.”</p>
+          <strong>Zainab A.</strong><small>Abuja, Nigeria</small>
+        </article>
+      </div>
+      <p class="review-disclaimer">Sample testimonials shown for design preview. Replace with verified customer reviews before publishing.</p>
+    </section>
+
+    <section class="section-wrap instagram-section" id="instagram">
+      <div class="section-heading">
+        <span class="eyebrow">FOLLOW THE STYLE</span>
+        <h2>On The Gram <span>@luxebyamanda</span></h2>
+        <p>Tag us in your looks for a chance to be featured.</p>
+      </div>
+      <div class="instagram-grid">
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Visit Instagram"><img src="https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?auto=format&fit=crop&w=500&q=80" alt="Fashion look"><span>♡</span></a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Visit Instagram"><img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=500&q=80" alt="Fashion shopping look"><span>♡</span></a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Visit Instagram"><img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=500&q=80" alt="Curated clothing"><span>♡</span></a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Visit Instagram"><img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=500&q=80" alt="Fashion outfit"><span>♡</span></a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Visit Instagram"><img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=500&q=80" alt="Fashion editorial"><span>♡</span></a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Visit Instagram"><img src="https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&fit=crop&w=500&q=80" alt="Fashion style"><span>♡</span></a>
+      </div>
+      <a class="instagram-link" href="https://www.instagram.com/" target="_blank" rel="noopener"><i data-lucide="instagram"></i> Shop on IG @luxebyamanda</a>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="footer">
+    <div class="footer-grid">
+      <div class="footer-brand-col">
+        <a class="brand brand-footer" href="#home"><span class="brand-main">Luxe</span><span class="brand-script">by Amanda</span></a>
+        <p>Affordable pieces. Main-character energy. A little luxe for every day.</p>
+        <form class="newsletter-form" id="newsletterForm">
+          <label for="newsletterEmail">Get the style memo</label>
+          <div class="newsletter-input"><input id="newsletterEmail" type="email" placeholder="Enter your email" required><button type="submit" aria-label="Subscribe"><i data-lucide="arrow-right"></i></button></div>
+          <small id="newsletterMessage">New drops and offers, straight to your inbox.</small>
+        </form>
+      </div>
+      <div><h3>Shop</h3><a href="#products" data-category-link="All">New In</a><a href="#products" data-category-link="Dresses">Dresses</a><a href="#products" data-category-link="Two-Piece">Two-Piece</a><a href="#products" data-category-link="Sale">Sale</a></div>
+      <div><h3>Need Help?</h3><a href="#footer" data-info="Delivery">Delivery information</a><a href="#footer" data-info="Returns">Returns &amp; exchanges</a><a href="#footer" data-info="Sizing">Sizing guide</a><a href="#footer" data-info="Orders">Order support</a></div>
+      <div><h3>Let's Connect</h3><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a><a href="https://wa.me/2349039610446" target="_blank" rel="noopener">WhatsApp</a><a href="https://www.tiktok.com/" target="_blank" rel="noopener">TikTok</a><p class="footer-location"><i data-lucide="map-pin"></i> Lagos, Nigeria</p><p class="footer-small">Nationwide delivery available.</p></div>
+    </div>
+    <div class="footer-bottom"><span>© <span id="year"></span> Luxe by Amanda. All rights reserved.</span><span>Made with love in Nigeria ♡</span></div>
+  </footer>
+
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart" aria-hidden="true">
+    <div class="drawer-header"><div><span class="eyebrow">YOUR SELECTION</span><h2>Your Bag <span id="drawerItemCount">(0)</span></h2></div><button class="icon-btn" id="cartClose" aria-label="Close cart"><i data-lucide="x"></i></button></div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-empty" id="cartEmpty"><i data-lucide="shopping-bag"></i><h3>Your bag is waiting</h3><p>Find something lovely to make it yours.</p><button class="button button-pink" id="continueShopping">Explore the collection</button></div>
+    <div class="cart-footer" id="cartFooter">
+      <div class="subtotal-row"><span>Subtotal</span><strong id="cartTotal">₦0</strong></div>
+      <p>Delivery fee is confirmed on WhatsApp.</p>
+      <button class="button button-pink checkout-button glow" id="checkoutButton">Checkout via WhatsApp <i data-lucide="message-circle"></i></button>
+      <small>You'll confirm sizes, delivery and payment details in chat.</small>
+    </div>
+  </aside>
+
+  <a class="floating-whatsapp" href="https://wa.me/2349039610446?text=Hi%20Luxe%20by%20Amanda%2C%20I%20have%20a%20question%20about%20your%20collection." target="_blank" rel="noopener" aria-label="Chat with Luxe by Amanda on WhatsApp"><i data-lucide="message-circle"></i><span>Chat with us</span></a>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
